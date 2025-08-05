@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    float unit,fare;
+    printf("enter the unit");
+    scanf("%f",&unit);
+    if(unit<=50)
+    {   fare = fare + (fare * 0.20);
+        printf("Total fare is 25");
+    }
+    else if(unit<=150)
+    {
+        fare=25+((unit-50)*0.75);
+        fare = fare + (fare * 0.20);
+        printf("Total fare is:%.2f\n",fare);
+    }
+    else if(unit<=250)
+    {
+     fare=75+((unit-150)*1.20);
+     fare = fare + (fare * 0.20);
+     printf("Total fare is:%.2f\n",fare);
+    }
+    else 
+    {
+        fare=150+((unit-250)*1.5);
+        fare = fare + (fare * 0.20);
+        printf("Total fare: %.2f\n", fare); 
+    }
+    return 0;
+}  
+    
