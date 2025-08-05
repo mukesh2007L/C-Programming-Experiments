@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    char alphabets;
+    printf("Enter an alphabet: ");
+    scanf(" %c", &alphabets);  // space before %c avoids newline issues
+
+    if (alphabets == 'a' || alphabets == 'e' || alphabets == 'i' || alphabets == 'o' || alphabets == 'u' ||
+        alphabets == 'A' || alphabets == 'E' || alphabets == 'I' || alphabets == 'O' || alphabets == 'U')
+        printf("Vowel\n");
+    else if
+        printf("Consonant\n");
+    else
+    printf("numbers");
+
+    return 0;
+}
