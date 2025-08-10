@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n,original,count=0,sum=0;
+    scanf("%d",&n); //370
+    original=n;
+    while(n>0)
+    {
+        count++;
+        n=n/10;
+    }    
+    while(n>0)
+    {
+        sum=sum+pow(n%10,count);
+        n=n/10;
+    }
+    if(sum==original)
+    printf("yes it is armstrong");
+    else
+    printf("no");
+    return 0;
+}
