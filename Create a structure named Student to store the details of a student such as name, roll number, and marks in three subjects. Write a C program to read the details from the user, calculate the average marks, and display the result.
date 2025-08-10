@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+struct student
+{
+   char name[20];
+   int rollno;
+   float marks[3];
+} stu;
+ 
+int main()
+{
+    int i;
+    float sum=0,avg;
+    printf("enter name");
+    scanf("%s",stu.name);
+    printf("enter roll no");
+    scanf("%d",&stu.rollno);
+    printf("enter the marks of three subjects");
+    for(i=0;i<3;i++)
+      {
+       scanf("%f",&stu.marks[i]);
+       sum=sum+stu.marks[i];
+      }
+      avg=sum/3;
+     printf("\nName: %s\nRoll: %d\nAverage Marks: %.2f\n", stu.name, stu.rollno, avg);
+     return 0;
+}
